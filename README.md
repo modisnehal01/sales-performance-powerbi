@@ -37,7 +37,7 @@ An end-to-end **synthetic UK retail sales** dashboard build kit covering **2024,
 **Like-for-like revenue, January–August only:** 2024 £160,875; 2025 £183,991; 2026 £189,950. Do not compare 2026's eight months with a complete prior calendar year.
 
 ## Dashboard design reference
-[Illustrative dashboard layout, Power BI screenshot](dashboard_design_reference.png)
+[Illustrative dashboard layout, Power BI screenshot](dashboard_design_reference.png) dashboard_design_reference.png
 
 
 
