@@ -1,0 +1,74 @@
+// Create calculated Date table (Modeling > New table):
+DimDate =
+ADDCOLUMNS (
+    CALENDAR ( DATE ( 2024, 1, 1 ), DATE ( 2026, 8, 31 ) ),
+    "Year", YEAR ( [Date] ),
+    "Month No", MONTH ( [Date] ),
+    "Month", FORMAT ( [Date], "MMM" ),
+    "YearMonth", FORMAT ( [Date], "YYYY-MM" ),
+    "Quarter", "Q" & FORMAT ( [Date], "Q" )
+)
+
+// Mark DimDate as the Date table using DimDate[Date].
+// Set DimDate[Month] to Sort by column: DimDate[Month No].
+// Create these measures under FactSales, one at a time:
+
+Net Revenue =
+CALCULATE (
+    SUMX (
+        FactSales,
+        FactSales[Quantity] * FactSales[UnitPriceGBP] * ( 1 - FactSales[DiscountPct] )
+    ),
+    FactSales[OrderStatus] = "Completed"
+)
+
+COGS =
+CALCULATE (
+    SUMX ( FactSales, FactSales[Quantity] * FactSales[UnitCostGBP] ),
+    FactSales[OrderStatus] = "Completed"
+)
+
+Gross Profit = [Net Revenue] - [COGS]
+
+Gross Margin % = DIVIDE ( [Gross Profit], [Net Revenue] )
+
+Completed Orders =
+CALCULATE (
+    DISTINCTCOUNT ( FactSales[OrderID] ),
+    FactSales[OrderStatus] = "Completed"
+)
+
+Average Order Value = DIVIDE ( [Net Revenue], [Completed Orders] )
+
+Units Sold =
+CALCULATE (
+    SUM ( FactSales[Quantity] ),
+    FactSales[OrderStatus] = "Completed"
+)
+
+Active Customers =
+CALCULATE (
+    DISTINCTCOUNT ( FactSales[CustomerID] ),
+    FactSales[OrderStatus] = "Completed"
+)
+
+Cancelled Orders =
+CALCULATE (
+    DISTINCTCOUNT ( FactSales[OrderID] ),
+    FactSales[OrderStatus] = "Cancelled"
+)
+
+All Orders = DISTINCTCOUNT ( FactSales[OrderID] )
+
+Cancellation Rate % = DIVIDE ( [Cancelled Orders], [All Orders] )
+
+Revenue PY =
+CALCULATE ( [Net Revenue], SAMEPERIODLASTYEAR ( DimDate[Date] ) )
+
+Revenue YoY % = DIVIDE ( [Net Revenue] - [Revenue PY], [Revenue PY] )
+
+Revenue YTD = TOTALYTD ( [Net Revenue], DimDate[Date] )
+
+// For the 2026 Jan-Aug page, compare against 2025 Jan-Aug, NOT 2025 full year.
+// When visualising YoY by year, the model's Date table ends 31 Aug 2026,
+// allowing 2026's previous-year window to cover Jan-Aug 2025.

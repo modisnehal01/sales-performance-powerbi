@@ -1,0 +1,23 @@
+﻿Table,Column,DataType,Description
+FactSales,SalesLineID,integer,Unique sales line identifier
+FactSales,OrderID,integer,Order identifier; repeated for multi-line orders
+FactSales,OrderDate,date,ISO transaction date
+FactSales,CustomerID,integer,Foreign key to DimCustomers
+FactSales,ProductID,integer,Foreign key to DimProducts
+FactSales,Quantity,integer,Units ordered
+FactSales,UnitPriceGBP,decimal,Transaction selling price before discounts
+FactSales,UnitCostGBP,decimal,Transaction unit cost snapshot
+FactSales,DiscountPct,decimal,Fraction (0.10 means 10% discount)
+FactSales,OrderStatus,text,Completed or Cancelled
+FactSales,SalesChannel,text,"Online, Retail Store or Marketplace"
+DimProducts,ProductID,integer,Unique product key
+DimProducts,ProductName,text,Product description
+DimProducts,Category,text,Product category
+DimProducts,ListPriceGBP,decimal,Reference product price (2024 baseline)
+DimProducts,StandardCostGBP,decimal,Reference product cost (2024 baseline)
+DimCustomers,CustomerID,integer,Unique customer key
+DimCustomers,CustomerLabel,text,Fictitious customer identifier
+DimCustomers,City,text,Example UK customer city
+DimCustomers,Region,text,UK region
+DimCustomers,CustomerSegment,text,"Consumer, Small Business or Corporate"
+DimCustomers,SignupDate,date,Synthetic registration date

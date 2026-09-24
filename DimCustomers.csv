@@ -1,0 +1,66 @@
+﻿CustomerID,CustomerLabel,City,Region,CustomerSegment,SignupDate
+1,Customer 001,London,South,Consumer,2022-02-04
+2,Customer 002,Liverpool,North,Small Business,2023-03-07
+3,Customer 003,Brighton,South,Consumer,2021-04-10
+4,Customer 004,Birmingham,Midlands,Consumer,2022-05-13
+5,Customer 005,Glasgow,Scotland,Consumer,2023-06-16
+6,Customer 006,London,South,Consumer,2021-07-19
+7,Customer 007,Liverpool,North,Small Business,2022-08-22
+8,Customer 008,Brighton,South,Consumer,2023-09-25
+9,Customer 009,Birmingham,Midlands,Small Business,2021-10-01
+10,Customer 010,Glasgow,Scotland,Consumer,2022-11-04
+11,Customer 011,Leicester,Midlands,Corporate,2023-12-07
+12,Customer 012,Liverpool,North,Consumer,2021-01-10
+13,Customer 013,Brighton,South,Consumer,2022-02-13
+14,Customer 014,Birmingham,Midlands,Small Business,2023-03-16
+15,Customer 015,Glasgow,Scotland,Consumer,2021-04-19
+16,Customer 016,Leicester,Midlands,Small Business,2022-05-22
+17,Customer 017,Manchester,North,Consumer,2023-06-25
+18,Customer 018,Brighton,South,Consumer,2021-07-01
+19,Customer 019,Birmingham,Midlands,Consumer,2022-08-04
+20,Customer 020,Glasgow,Scotland,Consumer,2023-09-07
+21,Customer 021,Leicester,Midlands,Small Business,2021-10-10
+22,Customer 022,Manchester,North,Corporate,2022-11-13
+23,Customer 023,Bristol,South,Small Business,2023-12-16
+24,Customer 024,Birmingham,Midlands,Consumer,2021-01-19
+25,Customer 025,Glasgow,Scotland,Consumer,2022-02-22
+26,Customer 026,Leicester,Midlands,Consumer,2023-03-25
+27,Customer 027,Manchester,North,Consumer,2021-04-01
+28,Customer 028,Bristol,South,Small Business,2022-05-04
+29,Customer 029,Sheffield,North,Consumer,2023-06-07
+30,Customer 030,Glasgow,Scotland,Small Business,2021-07-10
+31,Customer 031,Leicester,Midlands,Consumer,2022-08-13
+32,Customer 032,Manchester,North,Consumer,2023-09-16
+33,Customer 033,Bristol,South,Corporate,2021-10-19
+34,Customer 034,Sheffield,North,Consumer,2022-11-22
+35,Customer 035,Cardiff,Wales,Small Business,2023-12-25
+36,Customer 036,Leicester,Midlands,Consumer,2021-01-01
+37,Customer 037,Manchester,North,Small Business,2022-02-04
+38,Customer 038,Bristol,South,Consumer,2023-03-07
+39,Customer 039,Sheffield,North,Consumer,2021-04-10
+40,Customer 040,Cardiff,Wales,Consumer,2022-05-13
+41,Customer 041,Nottingham,Midlands,Consumer,2023-06-16
+42,Customer 042,Manchester,North,Small Business,2021-07-19
+43,Customer 043,Bristol,South,Consumer,2022-08-22
+44,Customer 044,Sheffield,North,Small Business,2023-09-25
+45,Customer 045,Cardiff,Wales,Consumer,2021-10-01
+46,Customer 046,Nottingham,Midlands,Consumer,2022-11-04
+47,Customer 047,Leeds,North,Consumer,2023-12-07
+48,Customer 048,Bristol,South,Consumer,2021-01-10
+49,Customer 049,Sheffield,North,Small Business,2022-02-13
+50,Customer 050,Cardiff,Wales,Consumer,2023-03-16
+51,Customer 051,Nottingham,Midlands,Small Business,2021-04-19
+52,Customer 052,Leeds,North,Consumer,2022-05-22
+53,Customer 053,London,South,Consumer,2023-06-25
+54,Customer 054,Sheffield,North,Consumer,2021-07-01
+55,Customer 055,Cardiff,Wales,Corporate,2022-08-04
+56,Customer 056,Nottingham,Midlands,Small Business,2023-09-07
+57,Customer 057,Leeds,North,Consumer,2021-10-10
+58,Customer 058,London,South,Small Business,2022-11-13
+59,Customer 059,Liverpool,North,Consumer,2023-12-16
+60,Customer 060,Cardiff,Wales,Consumer,2021-01-19
+61,Customer 061,Nottingham,Midlands,Consumer,2022-02-22
+62,Customer 062,Leeds,North,Consumer,2023-03-25
+63,Customer 063,London,South,Small Business,2021-04-01
+64,Customer 064,Liverpool,North,Consumer,2022-05-04
+65,Customer 065,Brighton,South,Small Business,2023-06-07

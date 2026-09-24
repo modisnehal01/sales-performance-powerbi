@@ -1,0 +1,13 @@
+﻿ProductID,ProductName,Category,ListPriceGBP,StandardCostGBP
+1,Laptop 14-inch,Electronics,729,543
+2,Monitor 27-inch,Electronics,229,153
+3,Tablet 10-inch,Electronics,329,238
+4,Wireless Mouse,Accessories,27,11
+5,Mechanical Keyboard,Accessories,79,37
+6,USB-C Dock,Accessories,119,71
+7,Standing Desk,Furniture,369,235
+8,Ergonomic Chair,Furniture,259,156
+9,Desk Lamp,Furniture,48,19
+10,Printer Paper Pack,Office Supplies,12,5
+11,Notebook Set,Office Supplies,16,7
+12,Office Storage Box,Office Supplies,24,11
