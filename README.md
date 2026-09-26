@@ -88,7 +88,6 @@ Cancelled orders are excluded from revenue calculations.
 | [Data_Dictionary.csv](Data_Dictionary.csv) | Field definitions |
 | [validation_kpis.csv](validation_kpis.csv) | KPI validation results |
 | [PowerBI_Theme.json](PowerBI_Theme.json) | Dashboard theme |
-| [Build_Dashboard.md](Build_Dashboard.md) | Dashboard specification |
 | [dashboard_design_reference.png](dashboard_design_reference.png) | Dashboard design |
 
 ## Tools
