@@ -46,7 +46,16 @@ Cancelled orders are excluded from revenue calculations.
 
 ## Dashboard
 
-![Sales performance dashboard](dashboard_design_reference.png)
+### Executive Overview
+
+![Power BI Executive Overview](dashboard_overview.png)
+
+### Product & Customer Detail
+
+![Power BI Product and Customer Detail](product_customer_detail.png)
+
+[Download the interactive Power BI report](Sales_Performance_Dashboard.pbix.pbix)
+  
 
 ## Key insights
 
